@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.contact-section {
+  padding: 4rem 2rem;
+  background-color: #f6f7f4;
+  font-family: 'Open Sans', sans-serif;
+  color: #3f4e44;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: #344e41;
+  margin-bottom: 1rem;
+}
+
+.contact-subtext {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #67796e;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 1rem;
+  border: 1px solid #cbd5ce;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  background-color: #ffffff;
+  color: #344e41;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a3b18a;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #a3b18a;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #8ca87a;
+}
+
+.success-msg {
+  margin-top: 1rem;
+  color: #3c6e71;
+  font-size: 1rem;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-form button {
+    font-size: 0.95rem;
+  }
+}
