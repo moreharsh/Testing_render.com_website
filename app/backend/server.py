@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, origins=["https://relax-frontend-1-0-0.onrender.com/"])
+CORS(app)
 
 try:
     conn = psycopg2.connect(os.getenv("INTERNAL_DATABASE_URL"))
@@ -92,4 +92,4 @@ def signup():
     return jsonify({'success': True, 'message': 'User created successfully'}), 201
 
 if __name__ == '__main__':
-    app.run(host='https://app-backend-1-0-0.onrender.com/', port=5000, debug=True)
+    app.run(host=os.getenv("HOST"), port=os.getenv("PORT"), debug=True)

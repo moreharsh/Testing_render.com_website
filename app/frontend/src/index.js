@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import SignUp from './pages/signup'
+import SignIn from './pages/signin'
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,7 +13,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}> </Route>
-        <Route path="/signup" element={<SignUp />}> </Route>
+        <Route path="/signIn" element={<SignIn />}> </Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

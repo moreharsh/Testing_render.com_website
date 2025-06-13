@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.services-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  background-color: #f2f3ee;
+}
+
+.services-title {
+  font-size: 2.5rem;
+  color: #5F8372;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+}
+
+
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 1rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+@media (min-width: 768px) {
+  .service-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 2px solid #e0e0dc;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 320px;
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+  color: #2c3e50;
+}
+
+.service-card.selected {
+  border-color: #7da391;
+  background-color: #eaf3ef;
+  transform: scale(1.03);
+}
+
+.service-card .tag {
+  background-color: #d0dcd0;
+  color: #556b5e;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  color: #344e41;
+  margin-bottom: 1rem;
+}
+
+.service-card hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
+}
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.service-card ul li {
+  margin: 0.5rem 0;
+}
+
+.price-section {
+  font-size: 1.25rem;
+  color: #2f3e46;
+  margin-top: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+.start-button {
+  margin-top: 1rem;
+  background-color: #7da391;
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #678674;
+}
