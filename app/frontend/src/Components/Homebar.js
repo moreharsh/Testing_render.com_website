@@ -19,10 +19,10 @@ const Navbar = () => {
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li className="navbar-login"><a href="/signIn">Sign In</a></li>
+          <li className="navbar-login"><a href="/login">Sign In</a></li>
         </ul>
       </div>
-      <a href="/signIn"><button className="login-button">Sign In</button></a>
+      <a href="/login"><button className="login-button">Sign In</button></a>
       <div className="menu-toggle" onClick={toggleMenu}>
         <span className="bar"></span>
         <span className="bar"></span>

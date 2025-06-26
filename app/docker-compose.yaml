@@ -1,11 +1,11 @@
 services:
   frontend:
     build: frontend/.
-    image: moreharsh/app-frontend:2.1.0
+    image: moreharsh/app-frontend:2.2.0
     ports:
       - "3000:3000"
   backend:
     build: backend/.
-    image: moreharsh/app-backend:1.0.2
+    image: moreharsh/app-backend:1.1.0
     ports:
       - "5000:5000"
